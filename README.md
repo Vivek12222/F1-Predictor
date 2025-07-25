@@ -69,6 +69,6 @@ cd frontend
 npm install
 npm start
 </pre>
-Make sure the backend is running on localhost:8000 and the frontend sends prediction requests to that address. You can test races like "belgian", "australian", or "monaco".
+Make sure the backend is running on localhost:8000 and the frontend sends prediction requests to that address. You can test races like "Belgian", "Australian", or "Monaco".
 
 
