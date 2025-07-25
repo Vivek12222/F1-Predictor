@@ -1,9 +1,9 @@
 # F1-Predictor
 
-🏎️ ## Overview
+## 🏎️ Overview
 Welcome to the F1 Race Predictor Web App — a unique blend of machine learning, Formula 1 passion, and a visually animated frontend. This project is a complete full-stack solution designed to predict the top 5 finishers of any Formula 1 Grand Prix (from 2021 to 2024), combining the power of data with the aesthetics of racing. Powered by FastAPI and React, and styled with styled-components and framer-motion, it offers a fun, immersive experience filled with 🏁 flags, 🏆 trophies, and animated car transitions.
 
-🧠 ## Machine Learning Model
+## 🧠 Machine Learning Model
 The predictions are driven by a carefully trained ensemble machine learning model, combining XGBoost and Gradient Boosting. It leverages a cleaned and processed dataset built from FastF1 API, including:
 
 Qualifying data
@@ -13,7 +13,7 @@ Circuit
 
 The model outputs a ranked list of likely top 5 finishers. The pipeline is saved using joblib, and preprocessing (e.g., OneHotEncoding) is preserved to ensure accurate future inference.
 
-##⚙️ Backend (FastAPI)
+## ⚙️ Backend (FastAPI)
 The backend is developed in Python using FastAPI. It serves a single /predict endpoint that:
 
 Accepts a Grand Prix name (like "belgian", "monaco", etc.)
