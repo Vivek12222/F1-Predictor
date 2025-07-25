@@ -64,6 +64,19 @@ uvicorn main:app --reload
 </pre>
 
 Frontend:
+Initially Run this command if there is any problem in npm libraries/modules
+<pre>
+cd frontend
+npm install react-scripts@5.0.1 --save
+npm install
+</pre>
+
+Don't try to this command as this will break node modules
+<pre>
+npm audit fix --force
+</pre>
+
+Then, run this in terminal
 <pre>
 cd frontend
 npm install
