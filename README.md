@@ -14,15 +14,15 @@ Circuit
 The model outputs a ranked list of likely top 5 finishers. The pipeline is saved using joblib, and preprocessing (e.g., OneHotEncoding) is preserved to ensure accurate future inference.
 
 ## ⚙️ Backend (FastAPI)
-The backend is developed in Python using FastAPI. It serves a single /predict endpoint that:
++ The backend is developed in Python using FastAPI. It serves a single /predict endpoint that:
 
-Accepts a Grand Prix name (like "belgian", "monaco", etc.)
++ Accepts a Grand Prix name (like "belgian", "monaco", etc.)
 
-Internally fetches the relevant data using the FastF1 API
++ Internally fetches the relevant data using the FastF1 API
 
-Applies preprocessing and feeds the data into the trained model
++ Applies preprocessing and feeds the data into the trained model
 
-Returns a JSON response of the top 5 drivers with constructors
++ Returns a JSON response of the top 5 drivers with constructors
 
 The API is optimized for fast response and modular design, and will soon be Docker-ready for cloud deployment.
 
@@ -42,23 +42,23 @@ The frontend is built in React using styled-components for styling and framer-mo
 4th and 5th place finishers are displayed with a stylish car icon and fade-in animation, adding depth to the experience.
 
 ## 🧩 Project Structure
-/frontend – React app
+1. /frontend – React app
 
-src/components/ – All major UI components (e.g., PodiumDisplay, ResultDisplay)
+2. src/components/ – All major UI components (e.g., PodiumDisplay, ResultDisplay)
 
-src/assets/ – Driver avatars, tire images, background F1 tracks
+3. src/assets/ – Driver avatars, tire images, background F1 tracks
 
-/backend – FastAPI server
+4. /backend – FastAPI server
 
-main.py – API logic
+5. main.py – API logic
 
-models/ – Trained model, encoder pipeline
+6. models/ – Trained model, encoder pipeline
 
-utils/ – Race data collection & preprocessing code
+7. utils/ – Race data collection & preprocessing code
 
 ## 🛠️ How to Run Locally
 Backend:
-<pre></pre>
+<pre>
 cd backend
 uvicorn main:app --reload
 </pre>
