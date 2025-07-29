@@ -78,8 +78,6 @@ npm audit fix --force
 
 Then, run this in terminal
 <pre>
-cd frontend
-npm install
 npm start
 </pre>
 Make sure the backend is running on and the frontend sends prediction requests to that address. You can test races like "Belgian", "Australian", or "Monaco".
